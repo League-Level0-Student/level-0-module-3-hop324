@@ -6,6 +6,7 @@ package modulo;
 
 /**
 * Fizz Buzz
+
 * 
 * In this project, we're going to build FizzBuzz. It's a children's game where
 * you count from 1 to 20. Easy, right? Here's the catch: instead of saying
@@ -18,7 +19,7 @@ package modulo;
 * 		Numbers divisible by both 3 and 5 become fizzbuzz.
 * 
 * Print your results to the console, or using JOptionPane if you like.
-* 
+*
 * If your code is correct, the output will be:
 *  
 * 1 2 fizz 4 buzz fizz 7 8 fizz buzz 11 fizz 13 14 fizzbuzz 16 17 fizz 19 buzz
@@ -26,6 +27,26 @@ package modulo;
 **/
 
 public class FizzBuzz {
-
+	public static void main(String[] args) {
+		
+	
+	int gg = 0;
+for(int i = 20; i > 0; i--) {
+	gg++;
+	if( gg%3 == 0 && gg%5 == 0) {
+		System.out.println("FizzBUZZ");
+	}
+	else if( gg%3 == 0) {
+		System.out.println("Fizz");
+	}
+	else if(gg%5 == 0) {
+		System.out.println("Buzz");
+	}
+	else {
+		System.out.println(gg);
+	}
 }
+}
+}
+	
 

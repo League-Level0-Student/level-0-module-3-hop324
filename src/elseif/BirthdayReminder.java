@@ -11,15 +11,29 @@ public class BirthdayReminder {
 	public static void main(String[] args) {
 	
 		// 1. correct the birthdays for your family below
-		String momsBirthday = "January 24th";
-		String dadsBirthday = "June 9th";
-		String myBirthday = "April 16th";
-
+		String momsBirthday = "August 1st";
+		String dadsBirthday = "Novemever 18th";
+		String myBirthday = "January 18th";
+String jeff = new String();
+//int biggadaday = 0;
 		// 2. Find out which birthday the user wants and and store their response in a variable
-	
+	jeff = JOptionPane.showInputDialog("Who's birhtday do you want?");
 		// 3. Print out what the user typed
-		
+		System.out.println(jeff);
+		//biggadaday = Integer.parseInt(jeff)
 		// 4. if user asked for "mom"
+		if(jeff.equalsIgnoreCase("MoM")) {
+			JOptionPane.showMessageDialog(null, momsBirthday);
+		}
+		else if(jeff.equalsIgnoreCase("dAd")) {
+			JOptionPane.showMessageDialog(null, dadsBirthday);
+		}
+		else if(jeff.equalsIgnoreCase("ThOmAs")) {
+			JOptionPane.showMessageDialog(null, myBirthday);
+		}
+		else {
+			JOptionPane.showMessageDialog(null, "Sorry, I don't have that person's birthday!");
+		}
 			//print mom's birthday
 		// 5. if user asked for "dad"
 			// print dad's birthday
